@@ -98,7 +98,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1X-Kj-0jk" userLabel="CellLabel" customClass="CustomLabel" customModule="ToDoApp" customModuleProvider="target">
-                                                    <rect key="frame" x="285" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="27" y="11" width="327" height="21"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
@@ -111,7 +111,8 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="h1X-Kj-0jk" secondAttribute="trailing" constant="65" id="fLk-C1-0YP"/>
+                                                <constraint firstItem="h1X-Kj-0jk" firstAttribute="leading" secondItem="R78-Tz-vUI" secondAttribute="leadingMargin" constant="19" id="Ugx-Iy-Zrz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="h1X-Kj-0jk" secondAttribute="trailing" constant="38" id="hCh-f6-g2n"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="h1X-Kj-0jk" secondAttribute="bottom" constant="3.5" id="hZm-gh-aeh"/>
                                                 <constraint firstItem="h1X-Kj-0jk" firstAttribute="top" secondItem="R78-Tz-vUI" secondAttribute="topMargin" constant="3" id="zTm-x3-XJH"/>
                                             </constraints>

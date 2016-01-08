@@ -35,6 +35,7 @@ class EditItemListViewController: CustomView , UITableViewDelegate {
         subTask.append(Sub)
 
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+        self.SubTaskTable.reloadData()
     }
 
     
@@ -51,7 +52,7 @@ class EditItemListViewController: CustomView , UITableViewDelegate {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.subTask = SubTask.MR_findByAttribute("task", withValue: ToDoData) as! [SubTask]
@@ -64,7 +65,7 @@ class EditItemListViewController: CustomView , UITableViewDelegate {
         NoteTextField.layer.cornerRadius = CGRectGetWidth(NoteTextField.frame)/25
         NoteTextField.clipsToBounds = true
         
-
+        self.SubTaskTable.delegate = self
 
         AddSubTask.setTitle(LABEL.TODO.ADD_SUB_TASK, forState: UIControlState.Normal)
         
@@ -99,6 +100,29 @@ class EditItemListViewController: CustomView , UITableViewDelegate {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return subTask.count
     }
+
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let Cell = SubTaskTable.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! CustomCell
+        let row = indexPath.row
+        let subChecked: SubTask = subTask[row]
+        
+ 
+        if subChecked.is_checked == true {
+            subChecked.is_checked = false
+            Cell.accessoryType = .None
+        }
+        else
+        {
+            subChecked.is_checked = true
+            Cell.accessoryType = .Checkmark
+        }
+        Cell.CellLabel.text = subTask[row].task_name
+        Cell.CellLabel.SetFontSize(20)
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+        self.SubTaskTable.reloadData()
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> CustomCell {
         
@@ -112,13 +136,28 @@ class EditItemListViewController: CustomView , UITableViewDelegate {
         } else {
             Cell.contentView.backgroundColor = UIColor(red: 114.0/255.0, green: 65.0/255.0,blue: 84.0/255.0, alpha: 1.0)
         }
-
+        
+        if subTask[row].is_checked == true {
+            Cell.accessoryType = .Checkmark
+        } else {
+            Cell.accessoryType = .None
+        }
         Cell.CellLabel.text = subTask[row].task_name
         Cell.CellLabel.SetFontSize(20)
-        
+
         return Cell
     }
 
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            
+            subTask.removeAtIndex(indexPath.row).MR_deleteEntity()
+            NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+            
+            
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
     
     
 }
