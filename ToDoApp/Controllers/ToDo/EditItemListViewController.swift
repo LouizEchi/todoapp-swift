@@ -9,7 +9,7 @@
 import UIKit
 import MagicalRecord
 
-class EditItemListViewController: CustomView , UITableViewDelegate, UITableViewDataSource {
+class EditItemListViewController: CustomView , UITableViewDelegate {
     var ToDoData: Task!
     var Index: Int = 0;
     var subTask: [SubTask]! = []
@@ -100,15 +100,21 @@ class EditItemListViewController: CustomView , UITableViewDelegate, UITableViewD
         return subTask.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> CustomCell {
         
-        let Cell = SubTaskTable.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let Cell = SubTaskTable.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! CustomCell
         
         
         let row = indexPath.row
+        if row % 2 == 0 {
+            Cell.contentView.backgroundColor = UIColor(red: 145.0/255.0, green: 78.0/255.0,blue: 95.0/255.0, alpha: 1.0)
+            
+        } else {
+            Cell.contentView.backgroundColor = UIColor(red: 114.0/255.0, green: 65.0/255.0,blue: 84.0/255.0, alpha: 1.0)
+        }
 
-
-        //Cell.CellLabel.text = subTask[row].task_name
+        Cell.CellLabel.text = subTask[row].task_name
+        Cell.CellLabel.SetFontSize(20)
         
         return Cell
     }

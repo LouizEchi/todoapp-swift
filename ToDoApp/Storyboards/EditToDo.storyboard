@@ -90,15 +90,15 @@
                                 <rect key="frame" x="0.0" y="367" width="400" height="317"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="4Lv-un-Dbl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="4Lv-un-Dbl" customClass="CustomCell" customModule="ToDoApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="400" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Lv-un-Dbl" id="R78-Tz-vUI">
                                             <rect key="frame" x="0.0" y="0.0" width="400" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1X-Kj-0jk" userLabel="CellLabel" customClass="CustomLabel" customModule="ToDoApp" customModuleProvider="target">
-                                                    <rect key="frame" x="285" y="14" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1X-Kj-0jk" userLabel="CellLabel" customClass="CustomLabel" customModule="ToDoApp" customModuleProvider="target">
+                                                    <rect key="frame" x="285" y="11" width="42" height="21"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
@@ -112,6 +112,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="h1X-Kj-0jk" secondAttribute="trailing" constant="65" id="fLk-C1-0YP"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="h1X-Kj-0jk" secondAttribute="bottom" constant="3.5" id="hZm-gh-aeh"/>
+                                                <constraint firstItem="h1X-Kj-0jk" firstAttribute="top" secondItem="R78-Tz-vUI" secondAttribute="topMargin" constant="3" id="zTm-x3-XJH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
