@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Bz-Jx-j2X">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delete Task-->
+        <scene sceneID="u6b-wx-0oZ">
+            <objects>
+                <viewController title="Delete Task" id="9Bz-Jx-j2X" customClass="EditItemListViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rL4-dK-LeX"/>
+                        <viewControllerLayoutGuide type="bottom" id="44L-4x-1Dv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J5C-JP-62f">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Task Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9J7-wK-Jc0" customClass="CustomLabel" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="47" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oui-Wt-emG" customClass="CustomTextField" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="76" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSz-Fi-ehe" customClass="CustomLabel" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="179" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="164" width="42" height="20.5"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBc-AD-aXd" customClass="CustomTextView" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="208" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Gix-Uk-CUo"/>
+                                    <constraint firstAttribute="width" constant="337" id="S5X-Lb-jn8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Add note here...">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gix-Uk-CUo"/>
+                                        <exclude reference="S5X-Lb-jn8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="208" width="551" height="178"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <mask key="constraints">
+                                        <include reference="Gix-Uk-CUo"/>
+                                        <include reference="S5X-Lb-jn8"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q22-di-n0e" customClass="CustomButton" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="713" width="400" height="38"/>
+                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CreateSubTask:" destination="9Bz-Jx-j2X" eventType="touchUpInside" id="TgJ-c6-rJZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lqc-ar-qvR" customClass="CustomTextField" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="683" width="400" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fex-BG-Hsh">
+                                <rect key="frame" x="0.0" y="367" width="400" height="317"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="4Lv-un-Dbl">
+                                        <rect key="frame" x="0.0" y="28" width="400" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Lv-un-Dbl" id="R78-Tz-vUI">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1X-Kj-0jk" userLabel="CellLabel" customClass="CustomLabel" customModule="ToDoApp" customModuleProvider="target">
+                                                    <rect key="frame" x="285" y="14" width="42" height="21"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="h1X-Kj-0jk" secondAttribute="trailing" constant="65" id="fLk-C1-0YP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CellLabel" destination="h1X-Kj-0jk" id="Q7T-Q7-uhH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9Bz-Jx-j2X" id="zDE-rm-A2b"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lqc-ar-qvR" firstAttribute="leading" secondItem="J5C-JP-62f" secondAttribute="leadingMargin" constant="-20" id="0ht-Mf-zWP"/>
+                            <constraint firstItem="qBc-AD-aXd" firstAttribute="top" secondItem="iSz-Fi-ehe" secondAttribute="bottom" constant="8" id="2jT-dC-XEc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qBc-AD-aXd" secondAttribute="leading" id="3go-z3-3by"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oui-Wt-emG" secondAttribute="trailing" constant="82" id="7Nm-G0-4dx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="iSz-Fi-ehe" secondAttribute="leading" id="975-y7-yK0"/>
+                            <constraint firstItem="oui-Wt-emG" firstAttribute="top" secondItem="9J7-wK-Jc0" secondAttribute="bottom" constant="8" id="98N-HV-Bq1"/>
+                            <constraint firstItem="fex-BG-Hsh" firstAttribute="leading" secondItem="J5C-JP-62f" secondAttribute="leadingMargin" constant="-20" id="AGX-5m-4p7"/>
+                            <constraint firstItem="Lqc-ar-qvR" firstAttribute="width" secondItem="Q22-di-n0e" secondAttribute="width" id="AOF-at-AMI"/>
+                            <constraint firstItem="fex-BG-Hsh" firstAttribute="leading" secondItem="Lqc-ar-qvR" secondAttribute="trailing" constant="-400" id="CN4-VN-ngs"/>
+                            <constraint firstItem="9J7-wK-Jc0" firstAttribute="top" secondItem="rL4-dK-LeX" secondAttribute="bottom" constant="8" id="F6C-V7-JmD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qBc-AD-aXd" secondAttribute="leading" id="JoG-eu-Lcp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qBc-AD-aXd" secondAttribute="leading" id="MLW-HY-QPQ"/>
+                            <constraint firstItem="oui-Wt-emG" firstAttribute="top" secondItem="9J7-wK-Jc0" secondAttribute="bottom" constant="8" id="NQe-CD-vXF"/>
+                            <constraint firstItem="Q22-di-n0e" firstAttribute="leading" secondItem="J5C-JP-62f" secondAttribute="leadingMargin" constant="-20" id="Obm-R0-KPi"/>
+                            <constraint firstItem="Lqc-ar-qvR" firstAttribute="top" secondItem="fex-BG-Hsh" secondAttribute="bottom" constant="-1" id="PAJ-eX-dQo"/>
+                            <constraint firstItem="Q22-di-n0e" firstAttribute="top" secondItem="Lqc-ar-qvR" secondAttribute="bottom" id="QFN-B0-eNS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9J7-wK-Jc0" secondAttribute="leading" id="SQP-px-xu9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9J7-wK-Jc0" secondAttribute="leading" id="St2-GL-25n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q22-di-n0e" secondAttribute="trailing" constant="-20" id="VwV-oQ-EhT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lqc-ar-qvR" secondAttribute="trailing" constant="-20" id="Y3f-3r-uYF"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="oui-Wt-emG" secondAttribute="leading" id="a3l-mZ-MWK"/>
+                            <constraint firstItem="iSz-Fi-ehe" firstAttribute="top" secondItem="oui-Wt-emG" secondAttribute="bottom" constant="48" id="eSF-x2-yho"/>
+                            <constraint firstItem="iSz-Fi-ehe" firstAttribute="top" secondItem="oui-Wt-emG" secondAttribute="bottom" constant="22" id="giN-Fz-el0"/>
+                            <constraint firstItem="Q22-di-n0e" firstAttribute="width" secondItem="J5C-JP-62f" secondAttribute="width" id="h7Z-wa-2tj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="iSz-Fi-ehe" secondAttribute="leading" id="haO-VM-fhI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fex-BG-Hsh" secondAttribute="trailing" constant="-20" id="jXR-qF-qQo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="oui-Wt-emG" secondAttribute="leading" id="nMr-1n-xXE"/>
+                            <constraint firstItem="fex-BG-Hsh" firstAttribute="top" secondItem="qBc-AD-aXd" secondAttribute="bottom" constant="31" id="p5x-mc-gTY"/>
+                            <constraint firstItem="qBc-AD-aXd" firstAttribute="top" secondItem="iSz-Fi-ehe" secondAttribute="bottom" constant="8" id="q6g-MC-ocr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oui-Wt-emG" secondAttribute="trailing" constant="372" id="qDn-CB-bsA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qBc-AD-aXd" secondAttribute="trailing" constant="209" id="qNJ-Jg-rxy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qBc-AD-aXd" secondAttribute="trailing" constant="23" id="s7m-Mc-NPk"/>
+                            <constraint firstItem="44L-4x-1Dv" firstAttribute="top" secondItem="Q22-di-n0e" secondAttribute="bottom" id="sAi-9m-J0b"/>
+                            <constraint firstItem="9J7-wK-Jc0" firstAttribute="top" secondItem="rL4-dK-LeX" secondAttribute="bottom" constant="34" id="zNl-YZ-rT3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="F6C-V7-JmD"/>
+                                <exclude reference="SQP-px-xu9"/>
+                                <exclude reference="St2-GL-25n"/>
+                                <exclude reference="zNl-YZ-rT3"/>
+                                <exclude reference="7Nm-G0-4dx"/>
+                                <exclude reference="98N-HV-Bq1"/>
+                                <exclude reference="NQe-CD-vXF"/>
+                                <exclude reference="a3l-mZ-MWK"/>
+                                <exclude reference="nMr-1n-xXE"/>
+                                <exclude reference="qDn-CB-bsA"/>
+                                <exclude reference="975-y7-yK0"/>
+                                <exclude reference="eSF-x2-yho"/>
+                                <exclude reference="giN-Fz-el0"/>
+                                <exclude reference="haO-VM-fhI"/>
+                                <exclude reference="2jT-dC-XEc"/>
+                                <exclude reference="3go-z3-3by"/>
+                                <exclude reference="JoG-eu-Lcp"/>
+                                <exclude reference="MLW-HY-QPQ"/>
+                                <exclude reference="q6g-MC-ocr"/>
+                                <exclude reference="qNJ-Jg-rxy"/>
+                                <exclude reference="s7m-Mc-NPk"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="F6C-V7-JmD"/>
+                                <include reference="St2-GL-25n"/>
+                                <include reference="NQe-CD-vXF"/>
+                                <include reference="a3l-mZ-MWK"/>
+                                <include reference="qDn-CB-bsA"/>
+                                <include reference="975-y7-yK0"/>
+                                <include reference="eSF-x2-yho"/>
+                                <include reference="3go-z3-3by"/>
+                                <include reference="q6g-MC-ocr"/>
+                                <include reference="qNJ-Jg-rxy"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="SQP-px-xu9"/>
+                                <include reference="zNl-YZ-rT3"/>
+                                <include reference="7Nm-G0-4dx"/>
+                                <include reference="98N-HV-Bq1"/>
+                                <include reference="nMr-1n-xXE"/>
+                                <include reference="giN-Fz-el0"/>
+                                <include reference="haO-VM-fhI"/>
+                                <include reference="2jT-dC-XEc"/>
+                                <include reference="JoG-eu-Lcp"/>
+                                <include reference="MLW-HY-QPQ"/>
+                                <include reference="s7m-Mc-NPk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Edit Item" id="HVM-hb-WvO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="P5q-N4-KFG">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="EditItem:" destination="9Bz-Jx-j2X" id="xKb-Nm-b5y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="AbstractSizeClassScreen[heightClass=regular-widthClass=compact]"/>
+                    <connections>
+                        <outlet property="AddSubTask" destination="Q22-di-n0e" id="SVA-Rs-x3H"/>
+                        <outlet property="MainNavigationItem" destination="HVM-hb-WvO" id="kBV-Mh-Ywc"/>
+                        <outlet property="NewTitleLabel" destination="9J7-wK-Jc0" id="xBL-Av-xbE"/>
+                        <outlet property="NoteLabel" destination="iSz-Fi-ehe" id="T4k-uo-8GB"/>
+                        <outlet property="NoteTextField" destination="qBc-AD-aXd" id="F0L-tn-o50"/>
+                        <outlet property="SubTaskTable" destination="fex-BG-Hsh" id="fYJ-o3-EdH"/>
+                        <outlet property="SubTaskText" destination="Lqc-ar-qvR" id="1cb-Qx-WUf"/>
+                        <outlet property="TitleTextField" destination="oui-Wt-emG" id="g1N-JA-bYJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EjC-al-jGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="273"/>
+        </scene>
+    </scenes>
+</document>

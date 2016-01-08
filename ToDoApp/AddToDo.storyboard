@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nE2-9y-wMl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Item-->
+        <scene sceneID="4Qn-nZ-vnv">
+            <objects>
+                <viewController title="Add Item" id="nE2-9y-wMl" customClass="AddItemListViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rlZ-fj-eul"/>
+                        <viewControllerLayoutGuide type="bottom" id="mic-Nf-GVI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4VI-hv-gzL">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIS-Po-SNu" customClass="CustomLabel" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="47" width="140" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Title">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="98" width="74" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsb-Xv-OoL" customClass="CustomLabel" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="179" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Add note here..." translatesAutoresizingMaskIntoConstraints="NO" id="UO6-Ql-MYj" customClass="CustomTextView" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="208" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="TWN-fO-pp9"/>
+                                    <constraint firstAttribute="height" constant="220" id="saj-fc-D5w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TWN-fO-pp9"/>
+                                        <exclude reference="saj-fc-D5w"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="208" width="551" height="178"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                    <mask key="constraints">
+                                        <include reference="TWN-fO-pp9"/>
+                                        <include reference="saj-fc-D5w"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GFI-el-zQU" customClass="CustomTextField" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="76" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="127" width="278" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UO6-Ql-MYj" firstAttribute="top" secondItem="bsb-Xv-OoL" secondAttribute="bottom" constant="8" id="44R-2v-UtH"/>
+                            <constraint firstItem="tIS-Po-SNu" firstAttribute="top" secondItem="rlZ-fj-eul" secondAttribute="bottom" constant="34" id="6vJ-aD-PcL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tIS-Po-SNu" secondAttribute="leading" id="A4w-eO-FId"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bsb-Xv-OoL" secondAttribute="leading" id="B2f-qY-5cn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GFI-el-zQU" secondAttribute="trailing" constant="372" id="BBj-pp-bK8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UO6-Ql-MYj" secondAttribute="leading" id="CtO-sL-Uaw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GFI-el-zQU" secondAttribute="leading" id="Cxw-IP-Wra"/>
+                            <constraint firstItem="UO6-Ql-MYj" firstAttribute="top" secondItem="bsb-Xv-OoL" secondAttribute="bottom" constant="8" id="FLz-ue-OpC"/>
+                            <constraint firstItem="GFI-el-zQU" firstAttribute="top" secondItem="tIS-Po-SNu" secondAttribute="bottom" constant="8" id="Fx1-AO-VoZ"/>
+                            <constraint firstItem="bsb-Xv-OoL" firstAttribute="top" secondItem="GFI-el-zQU" secondAttribute="bottom" constant="22" id="G7F-1X-gPa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GFI-el-zQU" secondAttribute="leading" id="IJp-lR-3cJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UO6-Ql-MYj" secondAttribute="leading" id="NEz-3k-AJL"/>
+                            <constraint firstItem="bsb-Xv-OoL" firstAttribute="top" secondItem="GFI-el-zQU" secondAttribute="bottom" constant="48" id="Udh-Cc-xsE"/>
+                            <constraint firstItem="GFI-el-zQU" firstAttribute="top" secondItem="tIS-Po-SNu" secondAttribute="bottom" constant="8" id="boM-L4-xsB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tIS-Po-SNu" secondAttribute="leading" id="d4N-SR-uw8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bsb-Xv-OoL" secondAttribute="leading" id="hRg-55-ckj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UO6-Ql-MYj" secondAttribute="leading" id="nRT-bl-Vfb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UO6-Ql-MYj" secondAttribute="trailing" constant="209" id="q9Q-zr-TgG"/>
+                            <constraint firstItem="tIS-Po-SNu" firstAttribute="top" secondItem="rlZ-fj-eul" secondAttribute="bottom" constant="8" id="rBC-CK-dqN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GFI-el-zQU" secondAttribute="trailing" constant="82" id="t1v-Bc-XRa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UO6-Ql-MYj" secondAttribute="trailing" constant="23" id="zN6-J8-88R"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6vJ-aD-PcL"/>
+                                <exclude reference="A4w-eO-FId"/>
+                                <exclude reference="d4N-SR-uw8"/>
+                                <exclude reference="rBC-CK-dqN"/>
+                                <exclude reference="BBj-pp-bK8"/>
+                                <exclude reference="Cxw-IP-Wra"/>
+                                <exclude reference="Fx1-AO-VoZ"/>
+                                <exclude reference="IJp-lR-3cJ"/>
+                                <exclude reference="boM-L4-xsB"/>
+                                <exclude reference="t1v-Bc-XRa"/>
+                                <exclude reference="B2f-qY-5cn"/>
+                                <exclude reference="G7F-1X-gPa"/>
+                                <exclude reference="Udh-Cc-xsE"/>
+                                <exclude reference="hRg-55-ckj"/>
+                                <exclude reference="44R-2v-UtH"/>
+                                <exclude reference="CtO-sL-Uaw"/>
+                                <exclude reference="FLz-ue-OpC"/>
+                                <exclude reference="NEz-3k-AJL"/>
+                                <exclude reference="nRT-bl-Vfb"/>
+                                <exclude reference="q9Q-zr-TgG"/>
+                                <exclude reference="zN6-J8-88R"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="d4N-SR-uw8"/>
+                                <include reference="rBC-CK-dqN"/>
+                                <include reference="BBj-pp-bK8"/>
+                                <include reference="Fx1-AO-VoZ"/>
+                                <include reference="IJp-lR-3cJ"/>
+                                <include reference="Udh-Cc-xsE"/>
+                                <include reference="hRg-55-ckj"/>
+                                <include reference="FLz-ue-OpC"/>
+                                <include reference="nRT-bl-Vfb"/>
+                                <include reference="q9Q-zr-TgG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6vJ-aD-PcL"/>
+                                <include reference="A4w-eO-FId"/>
+                                <include reference="Cxw-IP-Wra"/>
+                                <include reference="boM-L4-xsB"/>
+                                <include reference="t1v-Bc-XRa"/>
+                                <include reference="B2f-qY-5cn"/>
+                                <include reference="G7F-1X-gPa"/>
+                                <include reference="44R-2v-UtH"/>
+                                <include reference="CtO-sL-Uaw"/>
+                                <include reference="NEz-3k-AJL"/>
+                                <include reference="zN6-J8-88R"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Add Item" id="gZ7-WQ-4Iw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Khn-bd-dMf">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="AddTask:" destination="nE2-9y-wMl" id="Qcl-H3-RwZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="AbstractSizeClassScreen[heightClass=regular-widthClass=compact]"/>
+                    <connections>
+                        <outlet property="MainNavigationItem" destination="gZ7-WQ-4Iw" id="bPx-es-nIz"/>
+                        <outlet property="NewTitleLabel" destination="tIS-Po-SNu" id="M3n-Q6-3HQ"/>
+                        <outlet property="NoteLabel" destination="bsb-Xv-OoL" id="udV-8b-y7F"/>
+                        <outlet property="NoteTextField" destination="UO6-Ql-MYj" id="BxO-yb-rGe"/>
+                        <outlet property="TitleTextField" destination="GFI-el-zQU" id="9Ah-kY-x2q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhk-EW-H7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933.5" y="-458.25"/>
+        </scene>
+    </scenes>
+</document>

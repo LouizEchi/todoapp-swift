@@ -7,14 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A1D4D02DDBF4BC3ECA5D28 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1790371DADAA6EBA538BFD6B /* Pods.framework */; };
+		DA07E4FB1C156606005D87D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07E4F81C156606005D87D6 /* HomeViewController.swift */; };
+		DA07E4FC1C156606005D87D6 /* ToDoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA07E4F91C156606005D87D6 /* ToDoList.storyboard */; settings = {ASSET_TAGS = (1, ); }; };
+		DA07E4FD1C156606005D87D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA07E4FA1C156606005D87D6 /* Main.storyboard */; };
+		DA07E4FF1C15698B005D87D6 /* AddToDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA07E4FE1C15698B005D87D6 /* AddToDo.storyboard */; };
+		DA07E5011C1569D4005D87D6 /* EditToDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA07E5001C1569D4005D87D6 /* EditToDo.storyboard */; };
+		DA07E5051C156A5F005D87D6 /* AddItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07E5041C156A5F005D87D6 /* AddItemListViewController.swift */; };
+		DA07E5071C156A8C005D87D6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07E5061C156A8C005D87D6 /* ListViewController.swift */; };
+		DA07E5091C156AF0005D87D6 /* EditItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07E5081C156AF0005D87D6 /* EditItemListViewController.swift */; };
+		DA07E5171C15714C005D87D6 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07E5161C15714C005D87D6 /* Labels.swift */; };
+		DA07E51D1C15715B005D87D6 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA07E5181C15715B005D87D6 /* Poppins-Bold.ttf */; };
+		DA07E51E1C15715B005D87D6 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA07E5191C15715B005D87D6 /* Poppins-Light.ttf */; };
+		DA07E51F1C15715B005D87D6 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA07E51A1C15715B005D87D6 /* Poppins-Medium.ttf */; };
+		DA07E5201C15715B005D87D6 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA07E51B1C15715B005D87D6 /* Poppins-Regular.ttf */; };
+		DA07E5211C15715B005D87D6 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA07E51C1C15715B005D87D6 /* Poppins-SemiBold.ttf */; };
+		DA07E5241C157617005D87D6 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07E5231C157617005D87D6 /* CustomLabel.swift */; };
+		DA07E5261C15843D005D87D6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07E5251C15843D005D87D6 /* CustomTextField.swift */; };
+		DA07E5281C15847D005D87D6 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07E5271C15847D005D87D6 /* CustomTextView.swift */; };
+		DA07E52A1C1584C8005D87D6 /* CustomNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07E5291C1584C8005D87D6 /* CustomNavigationItem.swift */; };
 		DA1C96F21C1190B6003710C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C96F11C1190B6003710C4 /* AppDelegate.swift */; };
-		DA1C96F41C1190B6003710C4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C96F31C1190B6003710C4 /* FirstViewController.swift */; };
-		DA1C96F61C1190B6003710C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C96F51C1190B6003710C4 /* SecondViewController.swift */; };
-		DA1C96F91C1190B6003710C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1C96F71C1190B6003710C4 /* Main.storyboard */; };
 		DA1C96FB1C1190B6003710C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1C96FA1C1190B6003710C4 /* Assets.xcassets */; };
 		DA1C96FE1C1190B6003710C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1C96FC1C1190B6003710C4 /* LaunchScreen.storyboard */; };
 		DA1C97091C1190B6003710C4 /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C97081C1190B6003710C4 /* ToDoAppTests.swift */; };
 		DA1C97141C1190B6003710C4 /* ToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C97131C1190B6003710C4 /* ToDoAppUITests.swift */; };
+		DA8B64931C3A451300AAD63E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B64921C3A451300AAD63E /* DetailViewController.swift */; };
+		DAB8D9751C3D10500056E3D4 /* MagicalRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB8D9741C3D10500056E3D4 /* MagicalRecord.framework */; };
+		DAE9C9D21C3CABD6004D6BEA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE9C9D11C3CABD6004D6BEA /* CustomButton.swift */; };
+		DAE9C9D41C3CB4E7004D6BEA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE9C9D31C3CB4E7004D6BEA /* CustomView.swift */; };
+		DAE9C9D71C3CEE4C004D6BEA /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAE9C9D51C3CEE4C004D6BEA /* Task.xcdatamodeld */; };
+		DAE9C9DB1C3CF165004D6BEA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DAE9C9DA1C3CF165004D6BEA /* Podfile */; };
+		DAE9C9DD1C3CFB06004D6BEA /* ChameleonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE9C9DC1C3CFB06004D6BEA /* ChameleonFramework.framework */; };
+		DAE9C9DF1C3CFB09004D6BEA /* CVCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE9C9DE1C3CFB09004D6BEA /* CVCalendar.framework */; };
+		DAE9C9E31C3CFD45004D6BEA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE9C9E21C3CFD45004D6BEA /* Task.swift */; };
+		DAE9C9E51C3CFDAF004D6BEA /* SubTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE9C9E41C3CFDAF004D6BEA /* SubTask.swift */; };
+		DAF0AC6E1C192B050001DC11 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0AC6D1C192B050001DC11 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +62,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091DC64300BA09A3EB5F78FB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1790371DADAA6EBA538BFD6B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		574F1C60BE915D2A777A1BB0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DA07E4F81C156606005D87D6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/Home/HomeViewController.swift; sourceTree = "<group>"; };
+		DA07E4F91C156606005D87D6 /* ToDoList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ToDoList.storyboard; path = Storyboards/ToDoList.storyboard; sourceTree = "<group>"; };
+		DA07E4FA1C156606005D87D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		DA07E4FE1C15698B005D87D6 /* AddToDo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddToDo.storyboard; sourceTree = "<group>"; };
+		DA07E5001C1569D4005D87D6 /* EditToDo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EditToDo.storyboard; path = Storyboards/EditToDo.storyboard; sourceTree = "<group>"; };
+		DA07E5041C156A5F005D87D6 /* AddItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddItemListViewController.swift; path = Controllers/ToDo/AddItemListViewController.swift; sourceTree = "<group>"; };
+		DA07E5061C156A8C005D87D6 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = Controllers/ToDo/ListViewController.swift; sourceTree = "<group>"; };
+		DA07E5081C156AF0005D87D6 /* EditItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditItemListViewController.swift; path = Controllers/ToDo/EditItemListViewController.swift; sourceTree = "<group>"; };
+		DA07E5161C15714C005D87D6 /* Labels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Labels.swift; path = Configurations/Labels.swift; sourceTree = "<group>"; };
+		DA07E5181C15715B005D87D6 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "Configurations/Fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		DA07E5191C15715B005D87D6 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Light.ttf"; path = "Configurations/Fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		DA07E51A1C15715B005D87D6 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.ttf"; path = "Configurations/Fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		DA07E51B1C15715B005D87D6 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "Configurations/Fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		DA07E51C1C15715B005D87D6 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-SemiBold.ttf"; path = "Configurations/Fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		DA07E5231C157617005D87D6 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomLabel.swift; path = Configurations/Extensions/CustomLabel.swift; sourceTree = "<group>"; };
+		DA07E5251C15843D005D87D6 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = Configurations/Extensions/CustomTextField.swift; sourceTree = "<group>"; };
+		DA07E5271C15847D005D87D6 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextView.swift; path = Configurations/Extensions/CustomTextView.swift; sourceTree = "<group>"; };
+		DA07E5291C1584C8005D87D6 /* CustomNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomNavigationItem.swift; path = Configurations/Extensions/CustomNavigationItem.swift; sourceTree = "<group>"; };
 		DA1C96EE1C1190B5003710C4 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1C96F11C1190B6003710C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA1C96F31C1190B6003710C4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DA1C96F51C1190B6003710C4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		DA1C96F81C1190B6003710C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA1C96FA1C1190B6003710C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA1C96FD1C1190B6003710C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA1C96FF1C1190B6003710C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +94,23 @@
 		DA1C970F1C1190B6003710C4 /* ToDoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1C97131C1190B6003710C4 /* ToDoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppUITests.swift; sourceTree = "<group>"; };
 		DA1C97151C1190B6003710C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8B64921C3A451300AAD63E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Configurations/Extensions/DetailViewController.swift; sourceTree = "<group>"; };
+		DAB8D9741C3D10500056E3D4 /* MagicalRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MagicalRecord.framework; path = "Pods/../build/Debug-iphoneos/MagicalRecord.framework"; sourceTree = "<group>"; };
+		DAE9C9D11C3CABD6004D6BEA /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		DAE9C9D31C3CB4E7004D6BEA /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomView.swift; path = Configurations/Extensions/CustomView.swift; sourceTree = "<group>"; };
+		DAE9C9D61C3CEE4C004D6BEA /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
+		DAE9C9DA1C3CF165004D6BEA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DAE9C9DC1C3CFB06004D6BEA /* ChameleonFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChameleonFramework.framework; path = "Pods/../build/Debug-iphoneos/ChameleonFramework.framework"; sourceTree = "<group>"; };
+		DAE9C9DE1C3CFB09004D6BEA /* CVCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CVCalendar.framework; path = "Pods/../build/Debug-iphoneos/CVCalendar.framework"; sourceTree = "<group>"; };
+		DAE9C9E01C3CFB0C004D6BEA /* MagicalRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MagicalRecord.framework; path = "Pods/../build/Debug-iphoneos/MagicalRecord.framework"; sourceTree = "<group>"; };
+		DAE9C9E21C3CFD45004D6BEA /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DAE9C9E41C3CFDAF004D6BEA /* SubTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubTask.swift; path = Models/SubTask.swift; sourceTree = "<group>"; };
+		DAE9C9E61C3D0752004D6BEA /* ToDo-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDo-BridgingHeader.h"; sourceTree = "<group>"; };
+		DAE9C9E81C3D07E5004D6BEA /* MagicalRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MagicalRecord.framework; path = "Pods/../build/Debug-iphoneos/MagicalRecord.framework"; sourceTree = "<group>"; };
+		DAE9C9EA1C3D09E6004D6BEA /* SuperRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SuperRecord.framework; path = "Pods/../build/Debug-iphoneos/SuperRecord.framework"; sourceTree = "<group>"; };
+		DAE9C9EC1C3D0C67004D6BEA /* MagicalRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MagicalRecord.framework; path = "Pods/../build/Debug-iphoneos/MagicalRecord.framework"; sourceTree = "<group>"; };
+		DAE9C9EE1C3D0E8A004D6BEA /* MagicalRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MagicalRecord.framework; path = "Pods/../build/Debug-iphoneos/MagicalRecord.framework"; sourceTree = "<group>"; };
+		DAF0AC6D1C192B050001DC11 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = Configurations/Extensions/CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +118,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB8D9751C3D10500056E3D4 /* MagicalRecord.framework in Frameworks */,
+				DAE9C9DF1C3CFB09004D6BEA /* CVCalendar.framework in Frameworks */,
+				DAE9C9DD1C3CFB06004D6BEA /* ChameleonFramework.framework in Frameworks */,
+				14A1D4D02DDBF4BC3ECA5D28 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +142,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05F51814BE643E9779DE0EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8D9741C3D10500056E3D4 /* MagicalRecord.framework */,
+				DAE9C9EE1C3D0E8A004D6BEA /* MagicalRecord.framework */,
+				DAE9C9EC1C3D0C67004D6BEA /* MagicalRecord.framework */,
+				DAE9C9EA1C3D09E6004D6BEA /* SuperRecord.framework */,
+				DAE9C9E81C3D07E5004D6BEA /* MagicalRecord.framework */,
+				DAE9C9E01C3CFB0C004D6BEA /* MagicalRecord.framework */,
+				DAE9C9DE1C3CFB09004D6BEA /* CVCalendar.framework */,
+				DAE9C9DC1C3CFB06004D6BEA /* ChameleonFramework.framework */,
+				1790371DADAA6EBA538BFD6B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B5E9AA175B1888FEDB83AD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				574F1C60BE915D2A777A1BB0 /* Pods.debug.xcconfig */,
+				091DC64300BA09A3EB5F78FB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA07E50B1C1570BE005D87D6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DA07E5181C15715B005D87D6 /* Poppins-Bold.ttf */,
+				DA07E5191C15715B005D87D6 /* Poppins-Light.ttf */,
+				DA07E51A1C15715B005D87D6 /* Poppins-Medium.ttf */,
+				DA07E51B1C15715B005D87D6 /* Poppins-Regular.ttf */,
+				DA07E51C1C15715B005D87D6 /* Poppins-SemiBold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		DA07E5221C157548005D87D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA07E5231C157617005D87D6 /* CustomLabel.swift */,
+				DA07E5251C15843D005D87D6 /* CustomTextField.swift */,
+				DA07E5271C15847D005D87D6 /* CustomTextView.swift */,
+				DA07E5291C1584C8005D87D6 /* CustomNavigationItem.swift */,
+				DAF0AC6D1C192B050001DC11 /* CustomCell.swift */,
+				DA8B64921C3A451300AAD63E /* DetailViewController.swift */,
+				DAE9C9D11C3CABD6004D6BEA /* CustomButton.swift */,
+				DAE9C9D31C3CB4E7004D6BEA /* CustomView.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		DA1C96E51C1190B5003710C4 = {
 			isa = PBXGroup;
 			children = (
+				DAE9C9DA1C3CF165004D6BEA /* Podfile */,
 				DA1C96F01C1190B6003710C4 /* ToDoApp */,
 				DA1C97071C1190B6003710C4 /* ToDoAppTests */,
 				DA1C97121C1190B6003710C4 /* ToDoAppUITests */,
 				DA1C96EF1C1190B5003710C4 /* Products */,
+				7B5E9AA175B1888FEDB83AD0 /* Pods */,
+				05F51814BE643E9779DE0EEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +220,15 @@
 		DA1C96F01C1190B6003710C4 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				DAF0AC6F1C1A6C400001DC11 /* Models */,
+				DAA529521C1521AB0075365F /* Configurations */,
+				DA1C972C1C11992A003710C4 /* Controllers */,
+				DA1C97211C1190E9003710C4 /* Storyboards */,
 				DA1C96F11C1190B6003710C4 /* AppDelegate.swift */,
-				DA1C96F31C1190B6003710C4 /* FirstViewController.swift */,
-				DA1C96F51C1190B6003710C4 /* SecondViewController.swift */,
-				DA1C96F71C1190B6003710C4 /* Main.storyboard */,
 				DA1C96FA1C1190B6003710C4 /* Assets.xcassets */,
 				DA1C96FC1C1190B6003710C4 /* LaunchScreen.storyboard */,
 				DA1C96FF1C1190B6003710C4 /* Info.plist */,
+				DAE9C9E61C3D0752004D6BEA /* ToDo-BridgingHeader.h */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -128,6 +251,64 @@
 			path = ToDoAppUITests;
 			sourceTree = "<group>";
 		};
+		DA1C97211C1190E9003710C4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DA07E4F91C156606005D87D6 /* ToDoList.storyboard */,
+				DA07E5001C1569D4005D87D6 /* EditToDo.storyboard */,
+				DA07E4FE1C15698B005D87D6 /* AddToDo.storyboard */,
+				DA07E4FA1C156606005D87D6 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		DA1C972C1C11992A003710C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAA5294F1C151F0E0075365F /* Home */,
+				DA1C97311C11997D003710C4 /* ToDo */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DA1C97311C11997D003710C4 /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				DA07E5061C156A8C005D87D6 /* ListViewController.swift */,
+				DA07E5041C156A5F005D87D6 /* AddItemListViewController.swift */,
+				DA07E5081C156AF0005D87D6 /* EditItemListViewController.swift */,
+			);
+			name = ToDo;
+			sourceTree = "<group>";
+		};
+		DAA5294F1C151F0E0075365F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA07E4F81C156606005D87D6 /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		DAA529521C1521AB0075365F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				DA07E5221C157548005D87D6 /* Extensions */,
+				DA07E5161C15714C005D87D6 /* Labels.swift */,
+				DA07E50B1C1570BE005D87D6 /* Fonts */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		DAF0AC6F1C1A6C400001DC11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAE9C9D51C3CEE4C004D6BEA /* Task.xcdatamodeld */,
+				DAE9C9E21C3CFD45004D6BEA /* Task.swift */,
+				DAE9C9E41C3CFDAF004D6BEA /* SubTask.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +316,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA1C97181C1190B6003710C4 /* Build configuration list for PBXNativeTarget "ToDoApp" */;
 			buildPhases = (
+				8481F246CD6E9CE6E1516B57 /* Check Pods Manifest.lock */,
 				DA1C96EA1C1190B5003710C4 /* Sources */,
 				DA1C96EB1C1190B5003710C4 /* Frameworks */,
 				DA1C96EC1C1190B5003710C4 /* Resources */,
+				F3C8687813EDDB0D665FE79B /* Embed Pods Frameworks */,
+				DE2E6458CF7C4BBC70DF078B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +374,9 @@
 		DA1C96E61C1190B5003710C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+				);
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = IdeaRobin;
@@ -235,9 +422,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA07E4FC1C156606005D87D6 /* ToDoList.storyboard in Resources */,
+				DA07E4FF1C15698B005D87D6 /* AddToDo.storyboard in Resources */,
+				DA07E5211C15715B005D87D6 /* Poppins-SemiBold.ttf in Resources */,
+				DA07E51D1C15715B005D87D6 /* Poppins-Bold.ttf in Resources */,
+				DA07E51E1C15715B005D87D6 /* Poppins-Light.ttf in Resources */,
+				DA07E5011C1569D4005D87D6 /* EditToDo.storyboard in Resources */,
 				DA1C96FE1C1190B6003710C4 /* LaunchScreen.storyboard in Resources */,
+				DA07E51F1C15715B005D87D6 /* Poppins-Medium.ttf in Resources */,
+				DAE9C9DB1C3CF165004D6BEA /* Podfile in Resources */,
+				DA07E4FD1C156606005D87D6 /* Main.storyboard in Resources */,
 				DA1C96FB1C1190B6003710C4 /* Assets.xcassets in Resources */,
-				DA1C96F91C1190B6003710C4 /* Main.storyboard in Resources */,
+				DA07E5201C15715B005D87D6 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +453,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8481F246CD6E9CE6E1516B57 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE2E6458CF7C4BBC70DF078B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C8687813EDDB0D665FE79B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA1C96EA1C1190B5003710C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1C96F61C1190B6003710C4 /* SecondViewController.swift in Sources */,
+				DAE9C9D21C3CABD6004D6BEA /* CustomButton.swift in Sources */,
+				DA07E5091C156AF0005D87D6 /* EditItemListViewController.swift in Sources */,
+				DA07E4FB1C156606005D87D6 /* HomeViewController.swift in Sources */,
+				DAE9C9D41C3CB4E7004D6BEA /* CustomView.swift in Sources */,
+				DAF0AC6E1C192B050001DC11 /* CustomCell.swift in Sources */,
+				DA8B64931C3A451300AAD63E /* DetailViewController.swift in Sources */,
+				DA07E5281C15847D005D87D6 /* CustomTextView.swift in Sources */,
+				DA07E5171C15714C005D87D6 /* Labels.swift in Sources */,
+				DAE9C9E31C3CFD45004D6BEA /* Task.swift in Sources */,
+				DA07E5241C157617005D87D6 /* CustomLabel.swift in Sources */,
+				DA07E5261C15843D005D87D6 /* CustomTextField.swift in Sources */,
+				DA07E5051C156A5F005D87D6 /* AddItemListViewController.swift in Sources */,
+				DA07E5071C156A8C005D87D6 /* ListViewController.swift in Sources */,
 				DA1C96F21C1190B6003710C4 /* AppDelegate.swift in Sources */,
-				DA1C96F41C1190B6003710C4 /* FirstViewController.swift in Sources */,
+				DA07E52A1C1584C8005D87D6 /* CustomNavigationItem.swift in Sources */,
+				DAE9C9E51C3CFDAF004D6BEA /* SubTask.swift in Sources */,
+				DAE9C9D71C3CEE4C004D6BEA /* Task.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +558,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA1C96F71C1190B6003710C4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA1C96F81C1190B6003710C4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA1C96FC1C1190B6003710C4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -355,7 +605,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -394,7 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,9 +654,15 @@
 		};
 		DA1C97191C1190B6003710C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574F1C60BE915D2A777A1BB0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ToDoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idearobin.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,9 +671,15 @@
 		};
 		DA1C971A1C1190B6003710C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091DC64300BA09A3EB5F78FB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ToDoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idearobin.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,6 +753,7 @@
 				DA1C971A1C1190B6003710C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1C971B1C1190B6003710C4 /* Build configuration list for PBXNativeTarget "ToDoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +762,7 @@
 				DA1C971D1C1190B6003710C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1C971E1C1190B6003710C4 /* Build configuration list for PBXNativeTarget "ToDoAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,8 +771,23 @@
 				DA1C97201C1190B6003710C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DAE9C9D51C3CEE4C004D6BEA /* Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAE9C9D61C3CEE4C004D6BEA /* Task.xcdatamodel */,
+			);
+			currentVersion = DAE9C9D61C3CEE4C004D6BEA /* Task.xcdatamodel */;
+			name = Task.xcdatamodeld;
+			path = Models/Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DA1C96E61C1190B5003710C4 /* Project object */;
 }
