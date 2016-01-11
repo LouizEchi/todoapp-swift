@@ -221,7 +221,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Edit Item" id="HVM-hb-WvO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="P5q-N4-KFG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="P5q-N4-KFG" userLabel="Done">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="EditItem:" destination="9Bz-Jx-j2X" id="xKb-Nm-b5y"/>

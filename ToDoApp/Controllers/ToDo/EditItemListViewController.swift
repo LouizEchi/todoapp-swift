@@ -25,17 +25,22 @@ class EditItemListViewController: CustomView , UITableViewDelegate {
     @IBOutlet weak var SubTaskText: CustomTextField!
     @IBAction func CreateSubTask(sender: AnyObject) {
         let Sub: SubTask! = SubTask.MR_createEntity() as SubTask!
-        
-        Sub.task_name = SubTaskText.text!
-        Sub.is_checked = false
-        
-        Sub.task = ToDoData!
-        
 
-        subTask.append(Sub)
+        if (SubTaskText.text! != "") {
+            print ("LOL")
+            Sub.task_name = SubTaskText.text!
+            Sub.is_checked = false
 
-        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
-        self.SubTaskTable.reloadData()
+            Sub.task = ToDoData!
+            subTask.append(Sub)
+            NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+            self.SubTaskTable.reloadData()
+        } else {
+            let alert = UIAlertController(title:LABEL.ERROR.EDIT.SUB_TASK.TITLE, message: LABEL.ERROR.EDIT.SUB_TASK.MESSAGE, preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+
     }
 
     
@@ -59,7 +64,7 @@ class EditItemListViewController: CustomView , UITableViewDelegate {
 
         NewTitleLabel.text! = LABEL.TODO.ADD_LABEL
         NoteLabel.text! = LABEL.TODO.NOTE_LABEL
-        NoteTextField.text! = LABEL.TODO.NOTE_TEXT
+        NoteTextField.text! = ""
         NoteTextField.SetBorderWidth(0.2)
         NoteTextField.layer.borderColor = UIColor.grayColor().CGColor
         NoteTextField.layer.cornerRadius = CGRectGetWidth(NoteTextField.frame)/25
@@ -138,11 +143,15 @@ class EditItemListViewController: CustomView , UITableViewDelegate {
         }
         
         if subTask[row].is_checked == true {
+            Cell.contentView.backgroundColor = UIColor(red: 210.0/255.0, green: 82.0/255.0,blue: 127.0/255.0, alpha: 1)
+            Cell.tintColor =  UIColor(red: 226.0/255.0, green: 185.0/255.0,blue: 199.0/255.0, alpha: 1.0)
             Cell.accessoryType = .Checkmark
         } else {
             Cell.accessoryType = .None
         }
         Cell.CellLabel.text = subTask[row].task_name
+
+        Cell.layer.backgroundColor =  UIColor(red: 204.0/255.0, green: 204.0/255.0,blue: 204.0/255.0, alpha: 0).CGColor
         Cell.CellLabel.SetFontSize(20)
 
         return Cell

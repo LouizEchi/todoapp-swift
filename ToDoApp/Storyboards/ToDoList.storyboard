@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -32,14 +31,14 @@
                                                 <fragment content="Default">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <font key="NSFont" size="21" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="22" y="25" width="378" height="21"/>
+                                                <rect key="frame" x="111" y="26" width="275" height="23.5"/>
                                             </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plX-XM-meo" userLabel="CellTaskDate" customClass="CustomLabel" customModule="ToDoApp" customModuleProvider="target">
@@ -48,34 +47,36 @@
                                                 <fragment content="MON">
                                                     <attributes>
                                                         <color key="NSColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="50" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <font key="NSFont" size="25" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                             <nil key="highlightedColor"/>
-                                            <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <rect key="frame" x="233" y="-6" width="154" height="77.5"/>
+                                                <rect key="frame" x="8" y="8" width="88" height="63.5"/>
                                             </variation>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="5HT-vu-RIn" firstAttribute="leading" secondItem="Okw-jq-XSh" secondAttribute="leadingMargin" constant="14" id="T37-aa-CQl"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="plX-XM-meo" secondAttribute="trailing" constant="5" id="WQK-7X-3ij"/>
-                                        <constraint firstItem="5HT-vu-RIn" firstAttribute="top" secondItem="Okw-jq-XSh" secondAttribute="topMargin" constant="17" id="aSx-OE-XiE"/>
-                                        <constraint firstItem="plX-XM-meo" firstAttribute="leading" secondItem="Okw-jq-XSh" secondAttribute="leadingMargin" constant="225" id="odR-eJ-1rh"/>
+                                        <constraint firstItem="5HT-vu-RIn" firstAttribute="top" secondItem="Okw-jq-XSh" secondAttribute="topMargin" constant="18" id="g3s-re-RBR"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="plX-XM-meo" secondAttribute="bottom" constant="-6" id="iDG-xM-8qV"/>
+                                        <constraint firstItem="5HT-vu-RIn" firstAttribute="leading" secondItem="plX-XM-meo" secondAttribute="trailing" constant="15" id="ib0-o3-33E"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="plX-XM-meo" secondAttribute="leading" id="wCp-Ap-wU2"/>
+                                        <constraint firstAttribute="topMargin" secondItem="plX-XM-meo" secondAttribute="top" id="wOB-Bb-5K0"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
                                             <exclude reference="plX-XM-meo"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="WQK-7X-3ij"/>
-                                            <exclude reference="odR-eJ-1rh"/>
-                                            <exclude reference="T37-aa-CQl"/>
-                                            <exclude reference="aSx-OE-XiE"/>
+                                            <exclude reference="iDG-xM-8qV"/>
+                                            <exclude reference="wCp-Ap-wU2"/>
+                                            <exclude reference="wOB-Bb-5K0"/>
+                                            <exclude reference="g3s-re-RBR"/>
+                                            <exclude reference="ib0-o3-33E"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -83,10 +84,11 @@
                                             <include reference="plX-XM-meo"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="WQK-7X-3ij"/>
-                                            <include reference="odR-eJ-1rh"/>
-                                            <include reference="T37-aa-CQl"/>
-                                            <include reference="aSx-OE-XiE"/>
+                                            <include reference="iDG-xM-8qV"/>
+                                            <include reference="wCp-Ap-wU2"/>
+                                            <include reference="wOB-Bb-5K0"/>
+                                            <include reference="g3s-re-RBR"/>
+                                            <include reference="ib0-o3-33E"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

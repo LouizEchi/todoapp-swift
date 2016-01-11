@@ -24,4 +24,13 @@ struct LABEL {
     }
     struct ACCOUNT {
     }
+    
+    struct ERROR {
+        struct EDIT {
+            struct SUB_TASK {
+                static let TITLE = "Invalid Input"
+                static let MESSAGE = "Subtask text field is blank"
+            }
+        }
+    }
 }

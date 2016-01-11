@@ -37,7 +37,7 @@ class AddItemListViewController: CustomView {
         MainNavigationItem.title? = LABEL.TODO.ADD_ITEM;
         NewTitleLabel.text! = LABEL.TODO.ADD_LABEL
         NoteLabel.text! = LABEL.TODO.NOTE_LABEL
-        NoteTextField.text! = LABEL.TODO.NOTE_TEXT
+        NoteTextField.text! = ""
         NoteTextField.SetBorderWidth(0.2)
         NoteTextField.layer.borderColor = UIColor.grayColor().CGColor
         NoteTextField.layer.cornerRadius = CGRectGetWidth(NoteTextField.frame)/25

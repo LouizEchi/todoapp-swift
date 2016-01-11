@@ -14,6 +14,7 @@ class ListViewController: UITableViewController {
     
     var ToDoItems:[Task]! = []
 
+
     @IBOutlet weak var NavigationItem: UINavigationItem!
 
     override func viewDidAppear(animated: Bool) {
@@ -53,17 +54,26 @@ class ListViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> CustomCell {
         let Cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! CustomCell
         let width = CGFloat(1.0)
+        var numerator = 0
+        var denominator = 0
         for (idx, dict) in ToDoItems.enumerate() {
 
             if(indexPath.row == idx)
             {
+                let subTasks = SubTask.MR_findByAttribute("task", withValue: ToDoItems[idx]) as! [SubTask]
                 Cell.CellLabel.text = dict.task
-
+                denominator = subTasks.count
+                for (_, subTask) in subTasks.enumerate() {
+                    if (subTask.is_checked) {
+                        numerator++
+                    }
+                }
+                
             }
         }
+        
+        Cell.CellTaskDate.text = String(numerator) + " | " + String(denominator)
 
-        
-        
         
         if indexPath.row % 2 == 0 {
             Cell.contentView.backgroundColor = UIColor(red: 145.0/255.0, green: 78.0/255.0,blue: 95.0/255.0, alpha: 1.0)
@@ -76,7 +86,8 @@ class ListViewController: UITableViewController {
         Cell.layer.borderColor = UIColor.lightGrayColor().CGColor
         Cell.layer.frame = CGRect(x: 0, y: Cell.layer.frame.size.height - width, width:  Cell.layer.frame.size.width, height: Cell.layer.frame.size.height)
         Cell.layer.masksToBounds = true
-        Cell.CellTaskDate.SetFontSize(55)
+        Cell.CellTaskDate.SetFontSize(25)
+        Cell.CellLabel.SetFontSize(17)
         
         
         
